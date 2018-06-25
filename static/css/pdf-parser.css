@@ -1,0 +1,12 @@
+.inpt_zone {
+margin-bottom: 100px;
+}
+
+.output_zone {
+padding: 50px;
+width: 100vw;
+}
+
+.output_zone p{
+word-wrap: break-word	
+}	
