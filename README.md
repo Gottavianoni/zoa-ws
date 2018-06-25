@@ -4,17 +4,31 @@
 This Flask app reads pdf input to show texte ouput on the web page.
 The file conversion to txt is done by a standalone Apache Tika App sets in External Folder
 
-## Input
-The file input is a pdf document sets antwhere in your local machine.
+## Manual
+### Get docker image
+To get the docker image first intall docker and then :
 
-## Output
-The ouput is directly print on the web page
+`docker pull gottavianoni/zoa-ws:V0`
+
+### The image will be set in a local container
+Then you can run the app :
+
+`docker run gottavianoni/zoa-ws:V0`
+
+### The image will be set in a local container
+Then you can acces the app through your web browser :
+
+`locahost:5000/pdf-parser`
+or
+`192.168.99.100:5000/pdf-parser`
+
+
 
 ## Ways to acces the Web service
 http://localhost:5000/pdf-parser (unix dist / windows with docker CE)
-http://localhost:5000/pdf-parser (unix dist / windows with docker CE)
+http://192.168.99.100:5000/pdf-parser ( With Docker Toolbox / Windows )
 
-##Dependancies
+## Dependancies
 The Web Service uses :
   -> Python 3
   -> Flask (V. > 0.10.1)
